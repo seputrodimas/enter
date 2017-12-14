@@ -1,0 +1,39 @@
+//JNE API
+	$jne_data = array(
+		'username'					=> 'ENTEROLSD',
+		'api_key' 					=> '667e8b07',
+										
+		'OLSHOP_BRANCH' 			=> 'CGK000',
+		'OLSHOP_CUST' 				=> 'VARCHAR(10 BYTE)', 	// id pelanggan enterkomputer ??
+		'OLSHOP_ORDERID'			=> 'VARCHAR(20 BYTE)', 	// ??
+		'OLSHOP_SHIPPER_NAME' 		=> 'VARCHAR(30 BYTE)', 	// ENTERKOMP ??
+		'OLSHOP_SHIPPER_ADDR1' 		=> 'Mangga Dua Mall Lt.5 Blok C',
+		'OLSHOP_SHIPPER_ADDR2' 		=> 'No. 101-106',
+		'OLSHOP_SHIPPER_ADDR3' 		=> 'Jakarta Pusat',
+		'OLSHOP_SHIPPER_CITY' 		=> 'VARCHAR(20 BYTE)', 	// kota enterkomp ??
+		'OLSHOP_SHIPPER_REGION' 	=> 'VARCHAR(20 BYTE)', 	// alamat enterkomp ??
+		'OLSHOP_SHIPPER_ZIP' 		=> '10730 ',  			// alamat enterkomp ??
+		'OLSHOP_SHIPPER_PHONE' 		=> '021-3043-0333', 	// telpon enterkomp ??
+										
+		'OLSHOP_RECEIVER_NAME' 		=> $this->customer->name, //return: Alexander The Great
+		'OLSHOP_RECEIVER_ADDR1' 	=> $this->customer->address, // return: jl. jagakarsa tenggara 54, rt 5 rw 1, depan indomart
+		'OLSHOP_RECEIVER_ADDR2' 	=> 'VARCHAR(30 BYTE)',
+		'OLSHOP_RECEIVER_ADDR3' 	=> 'VARCHAR(30 BYTE)',
+		'OLSHOP_RECEIVER_CITY' 		=> $this->courier->kota, //return: bandung
+		'OLSHOP_RECEIVER_REGION'	=> 'VARCHAR(20 BYTE)',
+		'OLSHOP_RECEIVER_ZIP' 		=> $this->customer->postal_code, //return: 11257
+		'OLSHOP_RECEIVER_PHONE' 	=> $this->customer->phone, //return: 085755720857
+										
+		'OLSHOP_QTY' 				=> $this->sales->qty, // return: 5
+		'OLSHOP_WEIGHT' 			=> $this->sales->weights, // return: 7
+		'OLSHOP_GOODSDESC' 			=> $this->sales->notes, // return: warna pink metalik
+		'OLSHOP_GOODSVALUE' 		=> $this->sales->subtotal, // return: 2500000
+		'OLSHOP_GOODSTYPE' 			=> 'VARCHAR(1 BYTE)',  // ??
+		'OLSHOP_INST' 				=> 'VARCHAR(60 BYTE)', // ??
+		'OLSHOP_INS_FLAG' 			=> 'VARCHAR (1 Byte)', // ??
+		'OLSHOP_ORIG' 				=> 'VARCHAR(10 BYTE)', // ??
+		'OLSHOP_DEST' 				=> 'VARCHAR(10 BYTE)', // ??
+		'OLSHOP_SERVICE' 			=> 'VARCHAR(10 BYTE)', // ??
+		'OLSHOP_COD_FLAG' 			=> 'VARCHAR (3 Byte)', // ??
+		'OLSHOP_COD_AMOUNT' 		=> 'NUMBER(12 BYTE)', // ??
+);
